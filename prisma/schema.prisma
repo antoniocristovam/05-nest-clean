@@ -20,10 +20,10 @@ model User {
 model Question {
   id        String    @id @default(uuid())
   title     String
-  slud      String    @unique
+  slug      String    @unique
   content   String
   createdAt DateTime  @default(now()) @map("created_at")
-  updatedAt DateTime? @map("updated_at")
+  updatedAt DateTime? @updatedAt @map("updated_at")
   authorId  String    @map("author_id")
 
   author User @relation(fields: [authorId], references: [id])
