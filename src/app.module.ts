@@ -17,8 +17,8 @@ import { FetchRecentQuestionController } from "./controllers/fetch-recent-questi
     AuthModule,
   ],
   controllers: [
-    CreateAccountController,
     AuthenticateController,
+    CreateAccountController,
     CreateQuestionsController,
     FetchRecentQuestionController,
   ],
