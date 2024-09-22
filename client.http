@@ -30,7 +30,15 @@ POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
-# {
-#   "email": "sdfd342sf@gmail.com",
-#   "password": "12342225678"
-# }
+{
+  "title": "Nova Peragunta3 ",
+  "content": "Conteaúdo da pergunta331"
+}
+
+###
+
+# @name fetch_recent_questions
+
+GET {{baseUrl}}/questions?page=1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
